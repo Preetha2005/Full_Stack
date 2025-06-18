@@ -1,0 +1,33 @@
+.center {
+  text-align: center;
+}
+
+p.large {
+  font-size: 200%;
+}
+
+p.fancy.beige {
+  font-family: 'Courier New', monospace;
+  background-color: beige;
+  border: 2px solid green;
+}
+button:hover  {
+    background-color: beige;
+  display: block;
+}
+div.relative {
+  position: relative;
+  left: 30px;
+  border: 3px solid #73AD21;
+}
+div.page 
+{
+  
+  bottom : 10px;
+  height: 100vh;
+}
+.sticky
+{
+  position : sticky;
+  top : 0;
+  }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label for="name" >Name:</label>
+        <input type="text" id="name"><br>
+        <button onclick="hi()">Click Me</button>
+   
+    <div id="greet"></div><br>
+    <h1>Rock paper scissor</h1>
+    <button onclick="game('rock')">ROCK</button>
+    <button onclick="game('paper')">PAPER</button>
+    <button onclick="game('scissor')">SCISSOR</button>
+    <script>
+        function hi() {
+            const name = document.getElementById('name').value;
+            document.getElementById('greet').innerText = `Hello, ${name}!`;
+        }
+        function game(choice) {
+            const choices = ['rock', 'paper', 'scissor'];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+            let result;
+
+            if (choice === computerChoice) {
+                result = "It's a tie!";
+            } else if (
+                (choice === 'rock' && computerChoice === 'scissor') ||
+                (choice === 'paper' && computerChoice === 'rock') ||
+                (choice === 'scissor' && computerChoice === 'paper')
+            ) {
+                result = `You win! Computer chose ${computerChoice}.`;
+            } else {
+                result = `You lose! Computer chose ${computerChoice}.`;
+            }
+
+            alert(result);
+        }
+    </script>
+</body>
+</html>

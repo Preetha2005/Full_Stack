@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .flex-container {
+        display: flex;
+        background-color: bisque;
+        height: 100vh;
+        border:3px solid black;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .flex-container div {
+        background-color: lightblue;
+        border: 2px solid blue;
+        height: 100vh;
+        width: 100px;
+        
+      }
+      .two
+        {
+            flex-shrink: 2;
+        }
+        .nav ul{
+            background-color: lightgray;
+            justify-content: space-evenly; 
+            display: flex;
+            list-style: none;
+            
+        }
+        .grid-container {
+            display: grid;
+            grid-template-rows: 100px 100px 100px ;
+            grid-template-columns: 100px 100px 100px 100px;
+        }
+        .grid-container div 
+        {
+            background-color: lightblue;
+            border: 2px solid blue;
+            text-align: center;
+            border-radius: 20px;
+            padding-top: 35px;
+            
+        }
+        .box1 {
+          
+            grid-column-start: 1;
+            grid-column-end: 5;
+            
+                        }   
+        .box2 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+                        }  
+        @media(max-width:470px){
+        .nav{
+            display:flex;
+            flex-direction:column;
+        }
+    }         
+
+    </style>    
+    </head>
+<body>
+    
+         <ul class="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+         </ul>
+
+    <div class="grid-container">
+        <div class="box1">header</div>
+        <div class="box2">main</div>
+        <div class="box">empty</div>
+        <div class="box">sidebar</div>
+        <div class="box1">footer</div>
+    </div> 
+    <br>    
+  
+      
+    <div class="flex-container">
+        <div ></div>
+    </div>
+    <script>
+        console.log("Hello, World!");
+        function add(a,b) {
+            return a + b;
+        }
+        console.log(add(5, 10)); 
+        function greet(name,age)
+        {
+            return `Hello ${name}, you are ${age} years old.`;
+        }
+        console.log(greet("Preetha", 25)); 
+    </script>
+</body>
+</html>
