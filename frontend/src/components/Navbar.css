@@ -1,0 +1,24 @@
+.navbar
+{
+  display: flex;
+  justify-content: space-between;
+  background-color: aquamarine;
+  font-size: xx-large; 
+  padding: 10px;
+}
+li
+{
+  list-style: none;
+  
+}
+.navbar li a
+{
+ text-decoration: none  ;
+ color: black;
+  
+}
+.navbar li a:hover
+{
+  color: blue;
+}       
+
