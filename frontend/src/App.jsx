@@ -3,7 +3,7 @@ import Home from './Pages/Home'
 import About from './Pages/About'
 import Services from './Pages/Services'
 import Infotext from './hooks/Infotext'
-import Welcome from './Components/Welcome'; 
+import Welcome from './components/Welcome'
 
 
 // Define Greeting component
